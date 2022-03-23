@@ -2,7 +2,7 @@ function eat(callback) {
   console.log("ăn xong");
   callback();
 }
-function sleep() {
+function myCallback() {
   console.log("đi ngủ");
 }
-eat(sleep);
+eat(myCallback);
