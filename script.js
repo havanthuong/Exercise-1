@@ -15,8 +15,12 @@ const person = [
 let namePerson = person.map((x) => x.name);
 console.log(namePerson);
 //BÀI 3: MERGE CÁC PHẦN TỬ KHÔNG TRÙNG LẶP
+// case 1:
 const arr1 = ["John", "Pete", "Mary"];
 const arr2 = ["Mary", "Henry", "Harry"];
 let merge = arr1.concat(arr2);
 let unique = [...new Set(merge)];
 console.log(unique);
+// case 2:
+let arr = arr1.concat(arr2.filter((b) => !arr1.includes(b)));
+console.log(arr);
