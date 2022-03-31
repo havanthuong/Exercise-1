@@ -14,14 +14,14 @@ Array.prototype.mapA = function (callback) {
 const final = a.mapA((e) => e + 1);
 console.log(final);
 
-Array.prototype.foreachA = function (callback) {
-  for (let index in this) {
-    if (this.hasOwnProperty(index)) {
-      callback(this[index], index, this);
-    }
+Array.prototype.foreachA = function (abc) {
+  let s = 0;
+  for (let i = 0; i < this.length; i++) {
+    s += abc(this[i]);
   }
+  return s;
 };
-
-a.foreachA(function (item, index, array) {
-  console.log(item, index, array);
+const b = a.foreachA(function (item) {
+  return item;
 });
+console.log(b);
