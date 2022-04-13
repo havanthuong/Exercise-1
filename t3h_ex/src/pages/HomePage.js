@@ -40,7 +40,8 @@ const HomePage = () => {
             <h2>Age: {age}</h2>
           </div>)
       }
-      <button disabled={loading ? true : false} onClick={handle} > Reset</button>
+      {/* <button disabled={loading ? true : false} onClick={handle} > Reset</button> */}
+      <Button bDisabled={loading ? false : true} bOnClick={handle} name="Reset" />
     </div>
   )
 }

@@ -1,12 +1,10 @@
 import React from "react";
 
-const Button = () => {
-  const inform = () => {
-    alert("Log in OK!");
-  };
+const Button = (props) => {
   return (
     <div>
-      <button onClick={inform}>Log in</button>
+      {/* <button onClick={inform}>Log in</button> */}
+      <button disabled={props.bDisable} onClick={props.bOnClick}>{ props.name}</button>
     </div>
   );
 };
