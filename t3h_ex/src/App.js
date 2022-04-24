@@ -1,9 +1,9 @@
 import "./App.css";
-import HomePage from "./pages/HomePage";
+import TestStyleCp from "./pages/TestStyleCp";
 function App() {
   return (
     <div className="App">
-      <HomePage />
+      <TestStyleCp />
     </div>
   );
 }

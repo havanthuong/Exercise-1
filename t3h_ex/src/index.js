@@ -2,13 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 // import App from "./App";
-import ListPage from "./pages/ListPage";
+import TestStyleCp from "./pages/teststyle/TestStyleCp";
 import reportWebVitals from "./reportWebVitals";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ListPage/>
+    <TestStyleCp/>
   </React.StrictMode>,
   document.getElementById("root")
 );
